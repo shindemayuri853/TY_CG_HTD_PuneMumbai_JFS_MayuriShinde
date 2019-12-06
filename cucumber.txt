@@ -1,0 +1,31 @@
+Feature : Testing the login Feature
+
+Scenario : Testing the login Feature with Valid Data
+Given the user has loaded the application in the browser
+When the user enter the valid username
+And the user enter the valid password
+And the user clicks on the login button
+Then the dashboard page must be displayed 
+
+
+
+LOGIN STEP DEFINATION
+
+Public class LoginStepDefinition {
+static {
+System.setProperty("webdriver.chrome.driver","C:\\Users\\Srinidhi")
+}
+WebDriver driver;
+@Given
+driver = new ChromeDriver()'
+driver.get("https://demo.actitime.com/");
+
+@When
+driver.findElement(By.id("username")).sendKeys("admin");
+}
+
+BDD RUNNER
+
+@CucumberOptions(features = "Features", glue={"com.capgemini.stepdefinition"})
+public class BDDRunner extends AbstractTestNGCucumberTests{
+}
