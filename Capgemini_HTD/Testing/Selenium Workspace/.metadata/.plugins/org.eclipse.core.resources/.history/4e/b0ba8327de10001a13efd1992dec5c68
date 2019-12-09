@@ -1,0 +1,10 @@
+package com.capgemini.seleniumTool.driver;
+
+public class GetWindowHandle {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

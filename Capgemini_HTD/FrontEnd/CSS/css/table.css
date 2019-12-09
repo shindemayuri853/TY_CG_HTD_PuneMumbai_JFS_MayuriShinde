@@ -1,0 +1,33 @@
+table, th, td{
+    /* border: 1px solid black; */
+    /* border-collapse: collapse; */
+    margin-left: 500px;
+    margin-top: 300px;
+    text-align: center;
+    padding: 15px;
+    border-radius: 25px;
+    font-family: cursive;
+
+}
+table{
+    width: 30%; 
+    height: 40%; 
+   <!-- background-image: url("C:/Users/Mayuri Shinde/Desktop/CSS/image1/motorcycle-4562069__340.jpg"); -->
+
+}
+th{
+    background-color: rgba(89, 0, 255, 0.897);
+}
+tr:nth-child(even){
+    background-color: rgba(0, 162, 255, 0.897);
+}
+tr:nth-child(odd){
+    background-color: rgb(230, 226, 19);
+}td:hover{
+    background-color: darkgray;
+    color:whitesmoke;
+    cursor: pointer;
+}
+body{
+    background-color: black;
+}

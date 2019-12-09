@@ -1,0 +1,13 @@
+package com.capgemini.seleniumTool.driver;
+
+import java.awt.AWTException;
+
+public class OpenNewTab {
+	static {
+		System.setProperty("webdriver.chrome.driver", "./src/main/resources/chromedriver.exe");
+	}
+	public static void main(String[] args) throws AWTException, InterruptedException{
+		
+	}// end of method
+
+}// end of class

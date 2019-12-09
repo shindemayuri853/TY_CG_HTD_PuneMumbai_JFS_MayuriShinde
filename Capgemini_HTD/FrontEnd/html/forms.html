@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="Name">Name</label> <br>
+            <input type="text" name="name" id="name" required placeholder="enter name">
+        </div>
+        <div>
+            <label for="Email">Email</label><br>
+            <input type="email" name="email" id="email" required placeholder="enter email">
+        </div>
+        <div>
+            <label for="Mobile">Mobile No</label><br>
+            <input type="tel" name="Mobile" id="Mobile"required placeholder="enter mobile number"> 
+        </div>
+        <div>
+            <label for="Gender">Gender</label><br>
+            <input type="radio" name="gender" id="gender">Male
+            <input type="radio" name="gender" id="gender">Female
+            <input type="radio" name="gender" id="gender">Other
+        </div>
+        <div>
+            <label for="Month">Joining Date</label>
+            <select name="month" id="month">
+                <option value=""selected disabled>Select</option>
+                <option value="Jan">Jan</option>
+                <option value="Feb">Feb</option>
+                <option value="Mar">Mar</option>
+                <option value="Apr">Apr</option>
+                <option value="May">May</option>
+                <option value="Jun">Jun</option>
+            </select>
+        </div>
+        <div> 
+            <input type="checkbox" name="chk" id="chk">
+            <label for="chk">I Agree</label>
+        </div>
+        <div>
+            <input type="button" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+    </form>
+</body>
+</html>

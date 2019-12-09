@@ -1,0 +1,20 @@
+<div class="col-md-4 offset-md-4 mt-5 card card-body">
+            <form #loginForm="ngForm"  class="form-group" (ngSubmit)='login(loginForm)'>
+                <h4>Login Here</h4>
+                <input type="email" name="email" placeholder="Enter Email" #email='ngModel' ngModel
+                required minlength="8" email  class="form-control mb-3">
+                <div *ngIf='email.touched && email.invalid'>
+                    <p class="alert alert-danger" *ngIf='email.errors.required'>This feild is required</p>
+                    <p class="alert alert-danger" *ngIf='email.errors.minlength'>Minimum 8 Characters Required</p>
+                    <p class="alert alert-danger" *ngIf='email.errors.email'>Email Required</p>
+                </div>
+                <input type="password" name="password" placeholder="Enter Password" #password='ngModel' ngModel 
+                required minlength="8" password class="form-control mb-3">
+                <div *ngIf='password.touched && password.invalid'>
+                        <p class="alert alert-danger" *ngIf='password.errors.required'>This feild is required</p>
+                    </div>
+                <button type="submit " class="btn btn-outline-primary float-right" [disabled]='loginForm.invalid'>
+                    Submit
+                </button>
+            </form>
+        </div>

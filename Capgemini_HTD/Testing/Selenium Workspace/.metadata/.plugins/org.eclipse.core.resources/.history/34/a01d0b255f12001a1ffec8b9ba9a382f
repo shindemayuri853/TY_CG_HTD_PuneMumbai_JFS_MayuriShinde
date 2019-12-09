@@ -1,0 +1,9 @@
+package com.capgemini.cucumber.login;
+
+import cucumber.api.CucumberOptions;
+
+public class Runnable {
+@CucumberOptions(feature="features",glue = {"com.capgemini.cucumber.login.LoginStepDefinition"}){
+	
+}
+}// end of class

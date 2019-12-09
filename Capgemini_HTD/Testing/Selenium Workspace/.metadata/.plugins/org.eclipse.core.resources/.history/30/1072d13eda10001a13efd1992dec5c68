@@ -1,0 +1,11 @@
+package com.capgemini.seleniumTool.driver;
+
+public class Demo {
+static {
+	System.setProperty("webdriver.chrome.driver", "./chromedriver.exe");
+}
+
+public static void main(String[] args) {
+	
+}// end of main
+}// end of class

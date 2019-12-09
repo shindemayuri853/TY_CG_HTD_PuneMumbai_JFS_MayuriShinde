@@ -1,0 +1,10 @@
+package com.capgemini.seleniumTool.driver;
+
+public class OpenNewTab {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}// end of method
+
+}// end of class

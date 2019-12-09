@@ -1,0 +1,7 @@
+package com.capgemini.cucumber.login;
+
+import cucumber.api.CucumberOptions;
+
+@CucumberOptions(features = "Features", glue={"com.capgemini.stepdefinition"})
+public class BDDRunner extends AbstractTestNGCucumberTests{
+}// end of class

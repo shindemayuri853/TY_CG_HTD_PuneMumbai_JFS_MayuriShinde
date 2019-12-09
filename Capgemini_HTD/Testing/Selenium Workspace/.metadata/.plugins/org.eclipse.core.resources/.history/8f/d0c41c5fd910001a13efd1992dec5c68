@@ -1,0 +1,7 @@
+package seleniumTool;
+
+public class Demo {
+static {
+	System.setProperty("webdriver.chrome.driver","")
+}
+}// end of class

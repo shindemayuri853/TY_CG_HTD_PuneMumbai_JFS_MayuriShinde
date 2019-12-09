@@ -1,0 +1,24 @@
+<div class="col-md-5 offset-md-4 mt-5 card card-body">
+    <h3 class="bottom-bordered">Add Posts</h3>
+<form  #postForm = "ngForm" (ngSubmit) ="submitForm(postForm)">
+    <div  class="form-group">
+        <label for="userId">User Id</label>
+        <input type="text" name="userId" placeholder="Enter User Id" 
+        class="form-control mb-3" #userId="ngModel" ngModel>
+    </div>
+    
+    <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" class="form-control" 
+        placeholder="Enter Title Here" #title="ngModel" ngModel>
+    </div>
+
+    <div class="form-group">
+            <label for="body">Body</label>
+            <input type="text" name="body" id="body" class="form-control" 
+            placeholder="Enter Body Here" #body="ngModel" ngModel>
+        </div>
+    <button type="reset" class="btn btn-secondary">Reset</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

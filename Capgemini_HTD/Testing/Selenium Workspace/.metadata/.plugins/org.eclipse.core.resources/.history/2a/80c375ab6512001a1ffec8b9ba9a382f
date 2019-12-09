@@ -1,0 +1,8 @@
+package com.capgemini.cucumber.login;
+
+import cucumber.api.CucumberOptions;
+
+public class Runnable {
+@CucumberOptions(features="features",glue = {"com.capgemini.cucumber.login.LoginStepDefinition"})
+public class BDDRunner
+}// end of class

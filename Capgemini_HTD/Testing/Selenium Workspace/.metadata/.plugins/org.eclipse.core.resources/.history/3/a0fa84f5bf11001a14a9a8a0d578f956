@@ -1,0 +1,13 @@
+package com.capgemini.seleniumTool.tdd;
+import org.junit.Test;
+
+public class TestCalculator {
+
+	@Test
+	public void addTest() {
+		Calculator cal = new Calculator();
+		int a=10;
+		int b=20;
+		int expected = cal.add(a,b);
+	}
+}

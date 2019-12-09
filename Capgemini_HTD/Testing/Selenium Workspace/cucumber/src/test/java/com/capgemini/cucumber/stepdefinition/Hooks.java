@@ -1,0 +1,16 @@
+package com.capgemini.cucumber.stepdefinition;
+
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
+
+public class Hooks {
+	@Before
+	public void preSetup() {
+		System.out.println("Connect to DB");
+	}
+
+	@After
+	public void postSetup() {
+		System.out.println("Disconnect to DB");
+	}
+}

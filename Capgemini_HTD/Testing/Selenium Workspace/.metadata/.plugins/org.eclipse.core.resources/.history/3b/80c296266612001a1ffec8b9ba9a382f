@@ -1,0 +1,46 @@
+package com.capgemini.cucumber.login;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginStepDefinition {
+	static {
+		System.setProperty("webdriver.chrome.driver","");
+		}
+	WebDriver driver = new ChromeDriver();
+		@Given("^the user has loaded the application in the browser$")
+		public void the_user_has_loaded_the_application_in_the_browser() throws Throwable {
+					driver.get("https://demo.actitime.com/");
+ 
+		}
+
+		@When("^the user enter the valid username$")
+		public void the_user_enter_the_valid_username() throws Throwable {
+			driver.findElement(By.id("username")).sendKeys("admin"); 
+		}
+
+		@When("^the user enter the valid password$")
+		public void the_user_enter_the_valid_password() throws Throwable {
+			driver.findElement(By.name("pwd")).sendKeys("manager");
+
+		}
+
+		@When("^the user clicks on the login button$")
+		public void the_user_clicks_on_the_login_button() throws Throwable {
+			WebDriver driver = new ChromeDriver();
+			driver.findElement(By.xpath("//div[text()='login']")).click();
+  
+		}
+
+		@Then("^the dashboard page must be displayed$")
+		public void the_dashboard_page_must_be_displayed() throws Throwable {
+		    
+		}
+
+
+	}// end of class

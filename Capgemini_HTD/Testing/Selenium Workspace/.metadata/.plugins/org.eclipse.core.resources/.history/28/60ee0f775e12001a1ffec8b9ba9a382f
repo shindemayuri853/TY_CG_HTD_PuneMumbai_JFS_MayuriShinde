@@ -1,0 +1,42 @@
+package com.capgemini.cucumber.login;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+
+public class LoginStepDefinition {
+	static {
+		System.setProperty("webdriver.chrome.driver","");
+		}
+	public static void main(String[] args) {
+		@Given("^the user has loaded the application in the browser$")
+		public void the_user_has_loaded_the_application_in_the_browser() throws Throwable {
+			Webdriver driver = new ChromeDriver()'
+					driver.get("https://demo.actitime.com/");
+ 
+		}
+
+		@When("^the user enter the valid username$")
+		public void the_user_enter_the_valid_username() throws Throwable {
+		    
+		}
+
+		@When("^the user enter the valid password$")
+		public void the_user_enter_the_valid_password() throws Throwable {
+		   
+		}
+
+		@When("^the user clicks on the login button$")
+		public void the_user_clicks_on_the_login_button() throws Throwable {
+		    
+		}
+
+		@Then("^the dashboard page must be displayed$")
+		public void the_dashboard_page_must_be_displayed() throws Throwable {
+		    
+		}
+
+
+	}
+
+}

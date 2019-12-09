@@ -1,0 +1,12 @@
+package com.capgemini.cucumber.login;
+
+public class Login {
+	static {
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\Srinidhi")
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.capgemini.cucumber.login;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features="features",glue = {"com.capgemini.cucumber.login.LoginStepDefinition"})
+public class Runnable {
+
+}// end of class

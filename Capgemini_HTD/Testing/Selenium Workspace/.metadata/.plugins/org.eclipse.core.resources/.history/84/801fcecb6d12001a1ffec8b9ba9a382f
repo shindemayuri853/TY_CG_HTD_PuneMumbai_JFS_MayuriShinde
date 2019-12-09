@@ -1,0 +1,26 @@
+package com.capgemini.cucumber.stepdefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.When;
+
+public class LoginStepDefinition {
+	static {
+		System.setProperty("webdriver.chrome.driver","");
+		}
+	WebDriver driver = new ChromeDriver();
+	
+	@When("^the user enters \"([^\"]*)\" in the username$")
+	public void the_user_enters_in_the_username(String arg1) throws Throwable {
+	    driver.findElement(By.id("username")).sendKeys(arg1);
+	}
+
+	@When("^the user enters \"([^\"]*)\" in the password$")
+	public void the_user_enters_in_the_password(String arg1) throws Throwable {
+	    driver.findElement(By.name("pwd")).sendKeys(arg1);
+	}
+
+
+}// 

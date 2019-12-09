@@ -1,0 +1,8 @@
+package com.capgemini.cucumber.runner;
+
+import cucumber.api.CucumberOptions;
+
+public class BDDRunner {
+
+	@CucumberOptions(features="features", glue="{}")
+}
